@@ -1,6 +1,9 @@
 <html>
     <head>
         <title>Invie</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
         <style>
             body{
                 border:10px solid red;
@@ -10,9 +13,18 @@
                 width:100%;
                 vertical-align:top;
             }
+            img#responsive{
+                display:none;
+            }
+            @media screen and (max-width:768px){
+                img#responsive{
+                    display:block;
+                }
+            }
         </style>
     </head>
     <body>
+        <img src="./invie-responsive.png" alt="" id="responsive">
         <img src="header.jpeg" alt="">
         <img src="./hero.jpeg" alt="">
         <img src="./acustica.jpeg" alt="">
